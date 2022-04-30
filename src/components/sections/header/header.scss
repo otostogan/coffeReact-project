@@ -1,0 +1,31 @@
+.header{
+    position: absolute;
+    top: 30px;
+    ul{
+        display: flex;
+        width: 325px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            left: -30px;
+            top: -20px;
+            background: url('../../../assets/icons/logo-beans.svg');
+        }
+        a{
+            color: #ffff;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}

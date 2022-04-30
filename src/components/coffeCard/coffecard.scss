@@ -1,0 +1,34 @@
+.coffecard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 220px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 8px;
+    padding: 20px 20px;
+    a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: inherit;
+        text-decoration: none;
+    }
+    &-img{
+        margin-bottom: 15px;
+        img{
+            width: 150px;
+        height: 130px;
+        object-fit: cover;
+        }
+    }
+    &-title{
+        font-size: 14px;
+    }
+    &-price{
+        align-self: flex-end;
+    }
+    &-descr{
+        margin-top: 15px;
+    }
+}
