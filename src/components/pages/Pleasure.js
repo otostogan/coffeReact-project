@@ -10,9 +10,7 @@ import {Container} from 'react-bootstrap';
 import './pleasure.scss';
 
 
-const PleasurePage = (props) => {
-
-    const {page} = props;
+const PleasurePage = () => {
 
     const BannerSet = {
         title: 'For your pleasure',
@@ -26,7 +24,7 @@ const PleasurePage = (props) => {
     }
 
     return(
-        <div className={page}>
+        <div className="pleasure-page">
             <Banner info={BannerSet}/>
             <Desc info={DescSet}/>
             <section className="look">

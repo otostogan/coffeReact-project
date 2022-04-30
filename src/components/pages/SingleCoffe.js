@@ -30,7 +30,7 @@ const SingleCoffe = (props) =>{
         setCoffe(res);
     }
 
-    const {page} = props;
+    
 
     const BannerSet = {
         title: coffe.title,
@@ -38,7 +38,7 @@ const SingleCoffe = (props) =>{
     }
     
     return (
-        <div className={page}>
+        <div className="single-coffe-page">
             <Banner info={BannerSet}/>
             {loading ? <Loader/> : <DescSingleCoffe coffe={coffe}/>}
         </div>

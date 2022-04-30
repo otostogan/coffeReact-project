@@ -19,8 +19,9 @@ const Page404 = lazy(() => import('../pages/404'));
 	
 const App = () => {
 
-	const [page, setPage] = useState('main-page'); 
+	// const [page, setPage] = useState('main-page'); 
 
+	
 	
 	return(
 		<>	
@@ -30,10 +31,10 @@ const App = () => {
 				</Container>
 				<Suspense fallback={<div>Загрузка...</div>}>
 					<Routes>
-						<Route path="/" element={<MainPage page={page} />}/>
-						<Route path="/availability" element={<AboutPage page={page}/>}/>
-						<Route path="/pleasure" element={<PleasurePage page={page} />}/>
-						<Route path="/availability/:type/:availabilityID" element={<SingleCoffe page={page}/>}/>
+						<Route path="/" element={<MainPage />}/>
+						<Route path="/availability" element={<AboutPage />}/>
+						<Route path="/pleasure" element={<PleasurePage  />}/>
+						<Route path="/availability/:type/:availabilityID" element={<SingleCoffe />}/>
 						<Route path="*" element={<Page404/>}/>
 					</Routes>
 				</Suspense>

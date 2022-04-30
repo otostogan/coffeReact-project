@@ -6,9 +6,7 @@ import Desc from '../sections/desc/Desc';
 import LookFor from '../sections/look/LookFor';
 
 
-const AboutPage = (props) => {
-
-    const {page} = props;
+const AboutPage = () => {
 
     const BannerSet = {
         title: 'Our Coffee',
@@ -22,7 +20,7 @@ const AboutPage = (props) => {
     }
 
     return(
-        <div className={page}>
+        <div className="about-page">
             <Banner info={BannerSet}/>
             <Desc info={DescSet}/>
             <LookFor/>

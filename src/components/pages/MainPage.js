@@ -7,12 +7,10 @@ import ourBestBg from '../sections/ourBest/our-best-bg.jpg'
 
 import ErrorBoundary from '../errorBoundary/ErrorBoundary'
 
-const MainPage = (props) =>{
-
-    const {page} = props;
+const MainPage = () =>{
 
     return(
-        <div className={page}>
+        <div className="main-page">
             <Promo bg={promoBg}/>
             <About/>
             <ErrorBoundary>
